@@ -7,7 +7,7 @@ input_signal, fs = sf.read('Venkatesh-singing.wav')
 # Order of the filter
 order = 3
 
-# Cutoff frequency 4kHz
+# Cutoff frequency 3kHz
 cutoff_freq = 3000.0
 
 # Digital frequency
