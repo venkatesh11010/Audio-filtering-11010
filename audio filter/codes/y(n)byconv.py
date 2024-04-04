@@ -8,20 +8,22 @@ hn2=np.pad(fn, (2,0), 'constant', constant_values=(0))
 h = hn1+hn2
 
 nh=len(h)
+print(nh)
 x=np.array([1.0,2.0,3.0,4.0,2.0,1.0])
 nx = len(x)
 
-y = np.zeros(nx+nh-1)
+y = np.zeros(nx+nh-3)
 
-for k in range(0,nx+nh-1):
-	for n in range(0,nx):
-		if k-n >= 0 and k-n < nh:
-			y[k]+=x[n]*h[k-n]
+for n in range(0,nx+nh-3):
+	for k in range(0,nx):
+		if n-k >= 0 and n-k < nh:
+			y[n]+=x[k]*h[n-k]
 
 
-plt.stem(range(0,nx+nh-1),y,linefmt='b-', markerfmt='ro', basefmt='k')
+plt.stem(range(0,nx+nh-3),y,linefmt='b-', markerfmt='ro', basefmt='k')
 plt.xlabel('$n$')
 plt.ylabel('$y(n)$')
 plt.grid()
-
 plt.savefig('y_by_conv.png')
+plt.show()
+

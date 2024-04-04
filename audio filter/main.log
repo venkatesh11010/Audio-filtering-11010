@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.29)  2 APR 2024 00:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2024.1.29)  5 APR 2024 00:26
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1467,19 +1467,15 @@ Underfull \hbox (badness 10000) in paragraph at lines 461--465
  []
 
 [5 <./figs/yn_by_dft.png> <./figs/yn_verify.png>]
-<figs/lfilter.png, id=234, 722.7pt x 433.62pt>
+<figs/lfilter.png, id=234, 462.528pt x 346.896pt>
 File: figs/lfilter.png Graphic file (type png)
 <use figs/lfilter.png>
 Package pdftex.def Info: figs/lfilter.png  used on input line 472.
-(pdftex.def)             Requested size: 302.39923pt x 181.43765pt.
+(pdftex.def)             Requested size: 302.39923pt x 226.8083pt.
 
 Overfull \hbox (50.39923pt too wide) in paragraph at lines 472--473
  [][] 
  []
-
-
-LaTeX Warning: Reference `py:audio_filter' on page 6 undefined on input line 47
-8.
 
 
 Overfull \hbox (58.53061pt too wide) detected at line 487
@@ -1508,41 +1504,39 @@ Overfull \hbox (6.91942pt too wide) detected at line 505
 []
  []
 
-<figs/Hz_custom.png, id=237, 462.528pt x 346.896pt>
+<figs/Hz_custom.png, id=238, 462.528pt x 346.896pt>
 File: figs/Hz_custom.png Graphic file (type png)
 <use figs/Hz_custom.png>
 Package pdftex.def Info: figs/Hz_custom.png  used on input line 508.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-<figs/hn_custom.png, id=238, 462.528pt x 346.896pt>
+[6 <./figs/matrix.png> <./figs/lfilter.png> <./figs/Hz_custom.png>]
+<figs/hn_custom.png, id=257, 462.528pt x 346.896pt>
 File: figs/hn_custom.png Graphic file (type png)
 <use figs/hn_custom.png>
-Package pdftex.def Info: figs/hn_custom.png  used on input line 516.
+Package pdftex.def Info: figs/hn_custom.png  used on input line 521.
 (pdftex.def)             Requested size: 252.0pt x 189.00427pt.
-[6 <./figs/matrix.png> <./figs/lfilter.png> <./figs/Hz_custom.png>]
-Underfull \hbox (badness 1997) in paragraph at lines 524--526
+
+Underfull \hbox (badness 1997) in paragraph at lines 530--532
 \OT1/txr/m/n/12 As both $\OML/txmi/m/it/12 a []$ \OT1/txr/m/n/12 and $\OML/txmi
 /m/it/12 b []$ \OT1/txr/m/n/12 are fi-nite length
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 524--526
+Underfull \hbox (badness 10000) in paragraph at lines 530--532
 
  []
 
 [7
 
  <./figs/hn_custom.png>] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C50489AC4B237CCA6623115DF81D02F2;673.
+(rerunfilecheck)             Checksum: 9CA5DB692035504AAF48E474DE030132;668.
  ) 
 Here is how much of TeX's memory you used:
  44992 strings out of 478287
- 1032147 string characters out of 5849289
- 1710886 words of memory out of 5000000
- 62302 multiletter control sequences out of 15000+600000
+ 1032143 string characters out of 5849289
+ 1710880 words of memory out of 5000000
+ 62301 multiletter control sequences out of 15000+600000
  541610 words of font info for 182 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  115i,17n,118p,424b,1191s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1555,10 +1549,10 @@ pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsy.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 644290 bytes).
+Output written on main.pdf (7 pages, 628541 bytes).
 PDF statistics:
- 345 PDF objects out of 1000 (max. 8388607)
- 289 compressed objects within 3 object streams
- 156 named destinations out of 1000 (max. 500000)
+ 348 PDF objects out of 1000 (max. 8388607)
+ 292 compressed objects within 3 object streams
+ 157 named destinations out of 1000 (max. 500000)
  126 words of extra memory for PDF output out of 10000 (max. 10000000)
 

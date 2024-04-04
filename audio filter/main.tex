@@ -124,7 +124,7 @@ https://github.com/venkatesh11010/Audio-filtering-11010/blob/main/audio%20filter
 	\label{fig:xnyn}
 \end{figure}
 \end{enumerate}
-\section{Z-Transform}
+\section{Z-Transfrm}
 
 \begin{enumerate}[label=\thesection.\arabic*]
 \item The $Z$-transform of $x(n)$ is defined as
@@ -225,7 +225,7 @@ Let
 	H\brak{e^{j \omega}} = H\brak{z = e^{j \omega}}.
 \end{equation}
 Plot $\abs{H\brak{e^{j \omega}}}$.  Comment.  $H(e^{j \omega})$ is
-known as the {\em Discrete Time Fourier Transform} (DTFT) of $x(n)$.
+known as the {\em Discrete Time Fourier Transform} (DTFT) of $h(n)$.
 \\
 \solution Below is the code which plots the magnitude of Transfer Function:
 \begin{lstlisting}
@@ -299,7 +299,7 @@ For large $n$
     u\brak{n}=u\brak{n-2}=1
 \end{align}
 \begin{align}
-  \lim_{n \to \infty}  \brak{\frac{h(n + 1)}{h(n)}} = 1/2 <1
+  \lim_{n \to \infty}  \brak{\frac{h(n + 1)}{h(n)}} = \frac{1}{2} <1
 \end{align}
 Hence it is stable.
 \item 
@@ -329,7 +329,7 @@ https://github.com/venkatesh11010/Audio-filtering-11010/blob/main/audio%20filter
 \item Compute 
 \begin{equation}
 \label{eq:convolution}
-y(n) = x(n)*h(n) = \sum_{n=-\infty}^{\infty}x(k)h(n-k)
+y(n) = x(n)*h(n) = \sum_{k=-\infty}^{\infty}x(k)h(n-k)
 \end{equation}
 
 Comment. The operation in \eqref{eq:convolution} is known as
@@ -351,7 +351,7 @@ https://github.com/venkatesh11010/Audio-filtering-11010/blob/main/audio%20filter
 \end{figure}
 \item Show that
 \begin{equation}
-y(n) =  \sum_{n=-\infty}^{\infty}x(n-k)h(k)
+y(n) =  \sum_{k=-\infty}^{\infty}x(n-k)h(k)
 \end{equation}
 \solution
 In \eqref{eq:convolution}, we substitute $k = n - k$ to get
@@ -475,7 +475,7 @@ where the input signal is $x(n)$ and the output signal is $y(n)$ with initial va
 \end{figure}
 
 \item Repeat all the exercises in the previous sections for the above $a$ and $b$.\\
-\solution The code in \ref{py:audio_filter} generates the values of $a$ and $b$  which can be used to generate a difference equation.\\
+\solution The code in \ref{py:audio_filtering_code} generates the values of $a$ and $b$  which can be used to generate a difference equation.\\
 And,
 \begin{align}
 a &= \begin{bmatrix}
@@ -509,13 +509,19 @@ From \eqref{eq:iir_filter_gen}
     \caption{$|H(e^{j\omega})|$}
 \end{figure}
 \begin{multline}
-    h(n) = 0.005\delta(n) + 0.028 \delta(n-1) + \\0.068 \delta(n-2) + 0.112\delta(n-3) \cdots\cdots
+    H(z) = 0.005 + 0.028 z^{-1} + \\
+    0.068 z^{-2} + 0.112z^{-3} \cdots\cdots
+\end{multline}
+\begin{multline}
+    h(n) = 0.005\delta(n) + 0.028 \delta(n-1) + \\
+    0.068 \delta(n-2) + 0.112\delta(n-3) \cdots\cdots
 \end{multline}
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=\columnwidth]{figs/hn_custom.png}
     \caption{$h(n)$}
 \end{figure}
+
 \textbf{Stability of h(n)}:\\
 According to \eqref{eq:stabilty_condn}
 \begin{align}
@@ -537,4 +543,3 @@ A better filtering was found when order of the filter is 4.
 
 
 \end{document}
-
