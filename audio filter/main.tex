@@ -516,6 +516,12 @@ From \eqref{eq:iir_filter_gen}
     h(n) = 0.005\delta(n) + 0.028 \delta(n-1) + \\
     0.068 \delta(n-2) + 0.112\delta(n-3) \cdots\cdots
 \end{multline}
+Pole Zero plot:
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/pole_zero_ex.png}
+    \caption{$pole zero plot$}
+\end{figure}
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=\columnwidth]{figs/hn_custom.png}
@@ -530,11 +536,18 @@ H(1)&= \sum_{n = 0}^{\infty}h(n)  = \frac{\sum_{k = 0}^{N}b(k)}{\sum_{k = 0}^{M}
 \end{align}
 As both $a\brak{k}$ and $b\brak{k}$ are finite length sequences they converge.
 
-\textbf{Computing y(n) by convolution:}
+\textbf{Computing y(n) by convolution:}\\
 \begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\columnwidth]{figs/ex_yofn_conv.png}
-    \caption{$h(n)$}
+    \includegraphics[width=\columnwidth]{figs/ex_yofn_conv.png}
+    \caption{$y(n)$}
+\end{figure}
+
+\textbf{Computing y(n) by DFT and FFT:}\\
+\begin{figure}[!ht]
+    \centering
+    \includegraphics[width=\columnwidth]{figs/yn_by_dft_ex.png}
+    \caption{$y(n)$}
 \end{figure}
 \item What is the sampling frequency of the input signal?\\
 \solution The Sampling Frequency is 48KHz
